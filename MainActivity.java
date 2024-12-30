@@ -1,11 +1,8 @@
 package com.example.wallpaper;
 
 
-import static com.example.wallpaper.R.*;
-
 import android.app.WallpaperManager;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -13,12 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import java.io.IOException;
 import java.util.Timer;
@@ -49,16 +42,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    //    private void changewp() {
-//        Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.img);
-//        WallpaperManager manager = WallpaperManager.getInstance(getApplicationContext());
-//        try{
-//            manager.setBitmap(bitmap);
-//            Toast.makeText(this,"wallpaper set successfully",Toast.LENGTH_SHORT).show();
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
-//    }
+
     private void setWallpaper2() {
         mtTimer.schedule(new TimerTask() {
             @Override
